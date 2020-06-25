@@ -34,6 +34,8 @@ body {
 .subheading {
     text-align: center;
     line-height: 1.8em;
+  font-weight:bold;
+  color:#FF6392;
 }
 
 #img-div {
