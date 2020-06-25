@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #333;
+    margin: 0;
+}
+
+#main {
+    background-color: #2B2D42;
+    border-radius: 1rem;
+    margin: 8px 8px;
+    padding: 15px;
+}
+
+#title {
+    text-align: center;
+    font-family: 'Sacramento', cursive;
+    line-height: 1.8em;
+    font-size: 6rem;
+    color: #FFF;
+}
+
+.subheading {
+    text-align: center;
+    line-height: 1.8em;
+}
+
+#img-div {
+    background: #EFF0F4;
+    padding: 10px;
+    margin: 0 0 3rem 0;
+    border-radius: 2rem;
+}
+
+#image {
+    max-width: 100%;
+    max-height: 80vh;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+}
+
+#img-caption{
+    font-size: 1.7rem;
+}
+
+ul {
+    max-width: 550px;
+    margin: 0px auto 50px auto;
+    text-align: left;
+}
+
+li {
+    margin: 16px auto;
+}
+
+blockquote {
+    font-style: italic;
+    max-width: 545px;
+    margin: auto;
+    text-align: left;
+    color: #fff;
+}
+
+h3#link{
+    margin-top: 2rem;
+}
+
+#headline {
+    font-family: 'Sacramento', cursive;
+    font-size: 4rem;
+    color: #FFF;
+}
+
+#link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: #FFf;
+    /* font-style: italic; */
+}
+
+p#img-caption{
+    margin-top: 2rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeline {
+    width: 80%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.timeline ul {
+    list-style: none;
+}
+
+.timeline ul li {
+    padding: 20px;
+    background-color: #68696d;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.timeline ul li:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-content h1 {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.timeline-content p {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+.timeline-content h3.date {
+    font-family: 'Sacramento', cursive;
+    font-size: 2rem;
+    color: #FFF;
+    /* font-weight: bold; */
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+@media only screen and (min-width: 768px) {
+    
+    .timeline:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 2px;
+        height: 100%;
+        background-color: gray;
+    }
+
+    .timeline ul li {
+        width: 50%;
+        position: relative;
+        margin-bottom: 50px;
+    }
+
+    .timeline ul li:nth-child(odd) {
+        float: left;
+        clear: right;
+        transform: translateX(-30px);
+        border-radius: 20px 0px 20px 20px;
+    }
+
+    .timeline ul li:nth-child(even) {
+        float: right;
+        clear: left;
+        transform: translateX(30px);
+        border-radius: 0px 20px 20px 20px;
+    }
+
+    .timeline ul li::before {
+        content: "";
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: gray;
+        top: 0px;
+    }
+
+    .timeline ul li:nth-child(odd)::before {
+        transform: translate(50%, -50%);
+        right: -30px;
+    }
+
+    .timeline ul li:nth-child(even)::before {
+        transform: translate(-50%, -50%);
+        left: -30px;
+    }
+
+    .timeline-content .date {
+        position: absolute;
+        top: -30px;
+    }
+
+    .timeline ul li:hover::before {
+        background-color: #FF6392;
+    }
+    .box {
+        margin-bottom: 3rem;
+        margin-top: 30px;
+    }
+    .timeline-content .date {
+        font-family: 'Gochi Hand', cursive;
+        font-size: 1.5rem;
+    }
+
+}
+
+#tribute-link{
+    color: white;
+}
